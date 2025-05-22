@@ -30,6 +30,9 @@ These guides include examples of flashing, reading device info, writing images, 
 
 ## 🛠️ Basic Usage
 
+> [!IMPORTANT]
+> If your rockchip device is not detected, try connecting it via usb 2.0 adapter or usb hub.
+
 ```bash
 # List connected Maskrom devices
 rkdeveloptool ld
