@@ -14,12 +14,35 @@ Tool for flashing and debugging Rockchip devices over USB.
 
 ## 💻 Installation
 
-Add the tap and install the tool:
-
 ```bash
-brew tap IgorKha/homebrew-rkdeveloptool
+brew tap IgorKha/rkdeveloptool
+brew trust --formula IgorKha/rkdeveloptool/rkdeveloptool
 brew install rkdeveloptool
 ```
+
+### Homebrew Trust Warning
+
+Recent versions of Homebrew require explicit trust for third-party taps.
+
+If you see a message like:
+
+```text
+Error: Refusing to load formula igorkha/rkdeveloptool/rkdeveloptool from untrusted tap igorkha/rkdeveloptool.
+```
+
+run:
+
+```bash
+brew trust --formula IgorKha/rkdeveloptool/rkdeveloptool
+```
+
+Or to trust the entire tap:
+
+```bash
+brew trust IgorKha/rkdeveloptool
+```
+
+and then retry the installation/upgrade.
 
 ## 📖 Documentation
 
